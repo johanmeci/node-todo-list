@@ -69,7 +69,7 @@ class Tasks {
 
                 if (completeIn) {
                     i++;
-                    console.log(`${(i + '.').green} ${description} :: ${completeIn}`);
+                    console.log(`${(i + '.').green} ${description} :: ${completeIn.green}`);
                 }
 
             } else {
@@ -82,6 +82,24 @@ class Tasks {
             }
         });
 
+    }
+
+    toggleCompleted( ids = [] ) {
+
+        ids.forEach( id => {
+
+            const task = this._list[id];
+            if (!task.completeIn) {
+                task.completeIn = new Date().toISOString();
+            }
+        });
+
+        this.listArr.forEach( task => {
+
+            if (!ids.includes(task.id)) {
+                this._list[task.id].completeIn = null;
+            }
+        });
     }
 }
 

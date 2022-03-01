@@ -1,5 +1,5 @@
 const { saveData, readDB } = require('./helpers/dataFile');
-const { inquirerMenu, pauseMenu, getInput, listDeleteTasks, confirmAction } = require('./helpers/inquirer');
+const { inquirerMenu, pauseMenu, getInput, listDeleteTasks, confirmAction, checkListTasks } = require('./helpers/inquirer');
 const Tasks = require('./models/tasks');
 
 const main = async() => {
@@ -33,6 +33,11 @@ const main = async() => {
 
             case '4':
                 tasks.listPendingCompleteTasks(false);
+            break;
+
+            case '5':
+                const ids = await checkListTasks(tasks.listArr);
+                tasks.toggleCompleted(ids);
             break;
 
             case '6':
