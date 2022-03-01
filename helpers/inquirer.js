@@ -17,7 +17,7 @@ const questions = [
       },
       {
         value: '3',
-        name: `${'3.'.green.bold} List completed`
+        name: `${'3.'.green.bold} List completed tasks`
       },
       {
         value: '4',
