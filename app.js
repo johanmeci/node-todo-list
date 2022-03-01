@@ -1,5 +1,5 @@
 const { saveData, readDB } = require('./helpers/dataFile');
-const { inquirerMenu, pauseMenu, getInput } = require('./helpers/inquirer');
+const { inquirerMenu, pauseMenu, getInput, listDeleteTasks, confirmAction } = require('./helpers/inquirer');
 const Tasks = require('./models/tasks');
 
 const main = async() => {
@@ -33,6 +33,19 @@ const main = async() => {
 
             case '4':
                 tasks.listPendingCompleteTasks(false);
+            break;
+
+            case '6':
+                const id = await listDeleteTasks(tasks.listArr);
+
+                if (id !== '0') {
+                    const confirmDelete = await confirmAction('Are you sure?');
+                    
+                    if (confirmDelete) {
+                        tasks.deleteTask(id);
+                    }
+                }
+
             break;
         }
 
