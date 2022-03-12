@@ -9,7 +9,6 @@ Task list made with Node.js, in which the console is used as the interface for u
 </br>
 
 ## **Key features**
-<hr/>
 
 These are the dependencies used for project development.
 
@@ -20,7 +19,6 @@ These are the dependencies used for project development.
 </br>
 
 ## **How to use**
-<hr/>
 
 ```bash
 # Clone this repository
