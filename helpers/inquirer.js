@@ -42,9 +42,9 @@ const questions = [
 const inquirerMenu = async() => {
 
   console.clear();
-  console.log('======================'.rainbow);
-  console.log('   Select an option  '.bold);
-  console.log('======================'.rainbow);
+  console.log('===================='.rainbow);
+  console.log('    📚 Todo List  '.bold);
+  console.log('===================='.rainbow);
 
   const { option } = await inquirer.prompt(questions);
 
