@@ -12,9 +12,9 @@ Task list made with Node.js, in which the console is used as the interface for u
 
 These are the dependencies used for project development.
 
-* <a href="https://www.npmjs.com/package/inquirer" href="_blank">Inquirer</a>
-* <a href="https://www.npmjs.com/package/uuid" href="_blank">uuid</a>
-* <a href="https://www.npmjs.com/package/colors" href="_blank">Colors</a>
+* <a href="https://www.npmjs.com/package/inquirer" target="_blank">Inquirer</a>
+* <a href="https://www.npmjs.com/package/uuid" target="_blank">uuid</a>
+* <a href="https://www.npmjs.com/package/colors" target="_blank">Colors</a>
 
 </br>
 
