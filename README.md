@@ -8,7 +8,7 @@ Task list made with Node.js, in which the console is used as the interface for u
 
 </br>
 
-## **Key features**
+## **Built With**
 
 These are the dependencies used for project development.
 
